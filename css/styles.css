@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #003366; /* Azul oscuro */
+    --secondary-color: #f0f0f0; /* Gris claro */
+    --accent-color: #d4a017; /* Dorado/Ocre */
+    --text-color: #333;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;  
+}
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+/* Barra de navegación */
+.navbar-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .navbar-brand:hover {
+    color: var(--accent-color) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: var(--secondary-color);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #002244; /* Un azul más oscuro */
+    border-color: #002244;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--primary-color) !important;
+}
+
+/* tarjetas de docentes */
+#docentes .card,
+.editorial-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#docentes .card:hover,
+.editorial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#docentes .card-img-top,
+.editorial-card-img-top {
+    border: 3px solid var(--primary-color);
+}
+
+/* Enlace para saltar contenido (Accesibilidad) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 12px;
+    z-index: 9999;
+    text-decoration: none;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* formulario de contacto */
+#inscripciones form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+/* Estilos para la página editorial */
+.editorial-bg {
+    background: linear-gradient(rgba(30,30,30,0.7), rgba(30,30,30,0.7)), url('../img/editorial-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.editorial-content {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 700px;
+    margin: auto;
+}
